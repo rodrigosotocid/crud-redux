@@ -9,3 +9,7 @@ react-redux --> Es la que tiene fn para conectar reduct con la app de create rea
 redux-thunk --> Para usar funciones asyncronas en redux
 
 store.js --> Es el encargado del STATE de toda la aplicación
+
+{% comment %} REDUX HOOKS {% endcomment %}
+useDispatch --> Sirve para mandar a ejecutar las acciones que tengamos
+useSelector --> Forma para acceder al STATE dentro del componente
