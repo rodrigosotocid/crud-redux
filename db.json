@@ -1,16 +1,6 @@
 {
   "productos": [
     {
-      "id": 1,
-      "nombre": "Jugo de Zanahoria",
-      "precio": "31111"
-    },
-    {
-      "id": 2,
-      "nombre": "Jugo de Naranja",
-      "precio": "1"
-    },
-    {
       "nombre": "Jugo de Naranja",
       "precio": "300",
       "id": 3
@@ -28,42 +18,12 @@
     {
       "nombre": "Rib Eye 1kg",
       "precio": 800,
-      "id": 6
-    },
-    {
-      "nombre": "Rib Eye 1kg",
-      "precio": 800,
       "id": 7
-    },
-    {
-      "nombre": "Tequila",
-      "precio": 1,
-      "id": 8
-    },
-    {
-      "nombre": "Tequila",
-      "precio": 1,
-      "id": 9
-    },
-    {
-      "nombre": "Tequila",
-      "precio": 2,
-      "id": 10
-    },
-    {
-      "nombre": "Elegir Plataforma de Hosting",
-      "precio": 4,
-      "id": 11
     },
     {
       "nombre": "Jugo de Piña",
       "precio": 100,
       "id": 12
-    },
-    {
-      "nombre": "Natillas",
-      "precio": 150,
-      "id": 13
     }
   ]
 }
