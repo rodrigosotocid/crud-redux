@@ -6,7 +6,34 @@ import {
 
 // Crear nuevos productos (Aqui trabajamos con la BBDD o mandar a ejecutar al Reducer para modificar el STATE)
 export function crearNuevoProductoAction(producto) {
-  return () => {
-    console.log(producto);
+  return (dispatch) => {
+
+    dispatch(agregarProducto());
+
+    try {
+
+      dispatch(agregarProductoExito(producto))
+
+    } catch (error) {
+
+      console.log(error);
+      dispatch(agregarProductoError(true));
+    }
   }
 }
+
+const agregarProducto = () => ({
+  type: AGREGAR_PRODUCTO,
+  payload: true
+})
+
+// Si el Producto se guarda en la BBDD 
+const agregarProductoExito = (producto) => ({
+  type: AGREGAR_PRODUCTO_EXITO,
+  payload: producto
+})
+
+// Si hubo un error al guardar
+const agregarProductoError = () => ({
+  typo: AGREGAR_PRODUCTO_ERROR
+})
