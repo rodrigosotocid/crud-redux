@@ -1,0 +1,11 @@
+npm install -g json-server --> Instala paquete para la API Fake
+json-server db.json --port 4000 --> Ejecuta la API Fake en un puerto puerto distinto al por defecto. Hay que mantener ejecutado para que funcione.
+
+{% comment %} REDUX {% endcomment %}
+npm i react-redux redux redux-thunk
+
+redux --> Librería
+react-redux --> Es la que tiene fn para conectar reduct con la app de create react app
+redux-thunk --> Para usar funciones asyncronas en redux
+
+store.js --> Es el encargado del STATE de toda la aplicación
