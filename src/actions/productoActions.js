@@ -4,9 +4,9 @@ import {
   AGREGAR_PRODUCTO_ERROR
 } from '../types';
 
-// Crear nuevos productos
-export function crearNuevoProductoAction() {
+// Crear nuevos productos (Aqui trabajamos con la BBDD o mandar a ejecutar al Reducer para modificar el STATE)
+export function crearNuevoProductoAction(producto) {
   return () => {
-    console.log('desde action');
+    console.log(producto);
   }
 }

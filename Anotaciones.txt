@@ -13,3 +13,5 @@ store.js --> Es el encargado del STATE de toda la aplicación
 {% comment %} REDUX HOOKS {% endcomment %}
 useDispatch --> Sirve para mandar a ejecutar las acciones que tengamos
 useSelector --> Forma para acceder al STATE dentro del componente
+
+types --> Describen lo que va pasando en la aplicación
