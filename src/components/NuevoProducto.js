@@ -6,7 +6,7 @@ import { crearNuevoProductoAction } from '../actions/productoActions';
 
 
 
-const NuevoProducto = () => {
+const NuevoProducto = ({ history }) => {
 
   // STATE del componente
   const [nombre, guardarNombre] = useState('');
@@ -14,6 +14,10 @@ const NuevoProducto = () => {
 
   // Utilizar useDispatch y te crea/devuelve una función
   const dispatch = useDispatch();
+
+  // Acceder al STATE del store
+  const cargando = useSelector(state => state.productos.loading);
+  const error = useSelector(state => state.productos.error);
 
   // Manda llamar al action de productoAction
   const agregarProducto = (producto) => dispatch(crearNuevoProductoAction(producto));
@@ -36,6 +40,9 @@ const NuevoProducto = () => {
       nombre,
       precio
     });
+
+    // Redireccionar
+    history.push('/');
   }
 
 
@@ -81,6 +88,10 @@ const NuevoProducto = () => {
                 className="btn btn-primary font-weight-bold text-uppercase d-block w-100"
               >Agregar</button>
             </form>
+
+            {cargando ? <p>Cragando...</p> : null}
+            {error ? <p className="alert alert-danger p-2 mt-4 text-center">Hubo un error</p> : null}
+
           </div>
         </div>
       </div>

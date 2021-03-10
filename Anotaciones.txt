@@ -15,3 +15,7 @@ useDispatch --> Sirve para mandar a ejecutar las acciones que tengamos
 useSelector --> Forma para acceder al STATE dentro del componente
 
 types --> Describen lo que va pasando en la aplicación
+
+npm i axios --> Para crear nuestro cliente y conectarnos a la API Fake
+
+npm install sweetalert2 --> Librería de Alertas Popups
